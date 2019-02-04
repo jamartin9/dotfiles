@@ -1,0 +1,10 @@
+[submodule "zsh-config"]
+	path = zsh-config
+	url = https://www.github.com/jamartin9/zsh-config
+	update = merge
+	shallow = true
+[submodule "emacs-config"]
+	path = emacs-config
+	url = https://www.github.com/jamartin9/emacs-config.git
+	update = merge
+	shallow = true

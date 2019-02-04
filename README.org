@@ -1,0 +1,8 @@
+* jams Dotfiles for [[https://www.manjaro.org/download/xfce/][Manjaro]]
+** Requirements:
+  - bash
+  - git
+  - ansible-playbook or pip
+** Usage: ~git clone --single-branch --recurse-submodules --shallow-submodules --depth=1 https://github.com/jamartin9/dotfiles && bash dotfiles/install.sh~
+*** git clone --single-branch --recurse-submodules --shallow-submodules --depth=1
+*** git submodule update --recursive --remote

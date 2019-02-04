@@ -1,0 +1,26 @@
+---
+# installs packages for https://www.manjaro.org/download/xfce/
+- name: packages-config
+  hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+   - name: install packages and updates
+     package: name={{ item }} state=present
+     with_items:
+       - emacs
+       - zsh
+       - chromium # browsers
+       - firefox
+       - sudo # system
+       - ufw # firewall
+       - gufw
+       - veracrypt # encrypt
+       - python-pip # needed for ansible-playbook
+       - steam-devices # games
+   - name: upgrades and updates packages
+     pacman:
+       update_cache: yes
+       upgrade: yes
+     become: true
